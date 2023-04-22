@@ -2,9 +2,9 @@ var btn1 = document.querySelector(".btn1");
 var btn2 = document.querySelector(".btn2");
 var intro = document.querySelector(".intro");
 var inp = document.querySelector(".inp");
-var qu = document.querySelector(".qu");
+var qu = document.querySelector(".q-para");
 var wrong = document.querySelector(".wrong");
-var qr = document.querySelector(".qr")
+var qContainer = document.querySelector(".q-container");
 
 btn1.addEventListener("click", interviewQuestions);
 
@@ -14,15 +14,15 @@ function interviewQuestions(e){
     e.preventDefault();
     intro.classList.add("hide");
     if((inp.value).toLowerCase() == "developer"){
-        qr.classList.remove("hide")
+        qContainer.classList.remove("hide")
         qu.innerHTML = "Please, what is your area of specialization and what tools do you use?"
     }
     else if((inp.value).toLowerCase() == "driver"){
-        qr.classList.remove("hide")
+        qContainer.classList.remove("hide")
         qu.innerHTML = "Please, how long have you been driving and do you have a driving license?"
     }
     else if((inp.value).toLowerCase() == "nurse"){
-        qr.classList.remove("hide")
+        qContainer.classList.remove("hide")
         qu.innerHTML = "Please, what nursing degree do you possess and  how many years of experience do you have?"
     }
     else{

@@ -20,16 +20,18 @@ body{
 }
 
 .in{
-    padding: 23px 2rem;
+    padding: 10px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: column;
-    height: 60vh;
+    height: 100vh;
     align-items: center;
+    text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #f5f5dc;   
 }
+
+
 
 
 
@@ -69,6 +71,12 @@ a{
 }
 
 span {
+    font-size: 100px;
+    color: firebrick;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.quinn {
     font-size: 100px;
     color: firebrick;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -118,25 +126,104 @@ span {
     color: #f5f5dc88;
 }
 
+.q-container{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-items: center;
+}
 
-.qr{
+
+
+.q-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.q-image{
+    width: 300px;
+    margin: 0px 1rem;
+}
+
+.q-image img{
+    width: 100%;
+    border-radius: 8px;
+    height:430px;
+}
+
+.q-text{
+    width: 300px;
+    margin: 0px 1rem;
+}
+
+
+
+.q-textarea{
+    width: 100%;
+    border-radius: 10px;
+    height: 430px;
+    padding: 10px   ;
+}
+
+.q-btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1.5rem 0px;
+}
+
+.q-para{
+    text-align: center;
+    color: #f5f5dc;
+    margin: 1.5rem 0px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn_holder{
+    margin: 20px 0px 0px 0px;
+}
+
+
+
+
+
+
+
+/*.qr{
     padding: 0rem 2rem;
     display: flex;
     justify-content: center;
     height: 100vh;
     align-items: center;
-
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .qr .qr_img {
     margin-left: 3rem;
+    width: 300px;
+}
+
+.qr_content{
+    width: 400px;
+    padding: 10px;
+}
+
+.qr .qr_content form.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .qr .qr_img img {
-    width: 250px;
+    width: 100%;
     border-radius: 10px;
     height: 400px;
-    margin-right: 3rem;
 }
 
 .qr .qr_content textarea{
@@ -151,9 +238,10 @@ span {
     color: #f5f5dc;
     margin-bottom: 20px;
 }
+*/
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 /* Responsive-ness*/
@@ -202,6 +290,10 @@ span {
     }
 
     .quinn{
-
+        font-size: 50px !important;
+        margin: 50px 0px !important;
+        
     }
+
+    
 }
